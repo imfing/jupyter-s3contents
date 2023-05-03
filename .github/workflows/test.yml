@@ -1,12 +1,11 @@
 name: test
 
 on:
-  push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: "0 5 * * *"
+  push:
+    tags:
+      - 'v*'
 
 concurrency:
   group: test-${{ github.head_ref }}
