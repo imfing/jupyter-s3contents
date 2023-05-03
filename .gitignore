@@ -109,7 +109,11 @@ dmypy.json
 # setuptools_scm
 _generated_version.py
 
+# Editors
+.vscode/
+.idea/
+
 ### Project specific ###
-.venv
-tmp-data
+.venv/
+tmp-data/
 foo
