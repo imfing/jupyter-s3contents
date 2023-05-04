@@ -1,23 +1,22 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/danielfrg/s3contents/main/docs/logo.png" width="450px">
+    <img src="https://raw.githubusercontent.com/imfing/jupyter-s3contents/main/docs/logo.png" width="450px">
 </p>
 
 <p align="center">
-    <a href="https://pypi.org/project/s3contents/">
-        <img src="https://img.shields.io/pypi/v/mkdocs-jupyter.svg">
+    <a href="https://pypi.org/project/jupyter-s3contents/">
+        <img src="https://badge.fury.io/py/jupyter-s3contents.svg">
     </a>
-    <a href="https://github.com/danielfrg/s3contents/actions/workflows/test.yml">
-        <img src="https://github.com/danielfrg/s3contents/workflows/test/badge.svg">
+    <a href="https://github.com/imfing/jupyter-s3contents/actions/workflows/test.yml">
+        <img src="https://github.com/imfing/jupyter-s3contents/workflows/test/badge.svg">
     </a>
-    <a href="https://codecov.io/gh/danielfrg/s3contents?branch=main">
-        <img src="https://codecov.io/gh/danielfrg/s3contents/branch/main/graph/badge.svg">
-    </a>
-    <a href="http://github.com/danielfrg/s3contents/blob/main/LICENSE.txt">
+    <a href="http://github.com/imfing/jupyter-s3contents/blob/main/LICENSE.txt">
         <img src="https://img.shields.io/:license-Apache%202-blue.svg">
     </a>
 </p>
 
-# S3Contents - Jupyter Notebooks in S3
+# Jupyter S3Contents
+
+**Note**: Fork of [danielfrg/s3contents](https://github.com/danielfrg/s3contents). Work in progress to make it compatible with latest [jupyter-server](https://github.com/jupyter-server/jupyter_server) and [jupyterlab](https://github.com/jupyterlab/jupyterlab).
 
 A transparent, drop-in replacement for Jupyter standard filesystem-backed storage system.
 With this implementation of a
@@ -28,13 +27,13 @@ S3/GCS bucket on AWS/GCP or a self hosted S3 API compatible like [MinIO](http://
 ## Installation
 
 ```shell
-pip install s3contents
+pip install jupyter-s3contents
 ```
 
 Install with GCS dependencies:
 
 ```shell
-pip install s3contents[gcs]
+pip install jupyter-s3contents[gcs]
 ```
 
 ## s3contents vs X
@@ -220,7 +219,7 @@ c.HybridContentsManager.manager_kwargs = {
 Install the extra dependencies with:
 
 ```shell
-pip install s3contents[gcs]
+pip install jupyter-s3contents[gcs]
 ```
 
 ```python
