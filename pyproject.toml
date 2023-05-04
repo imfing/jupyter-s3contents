@@ -1,5 +1,5 @@
 [project]
-name = "s3contents"
+name = "jupyter-s3contents"
 description = "S3 Contents Manager for Jupyter"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -29,13 +29,14 @@ dependencies = [
   "nbconvert>=6.0,<8.0",
   "aiobotocore[boto3]>=1.4.0",
   "s3fs>=2021.11.0",
+  "jupyter-server"
 ]
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://github.com/danielfrg/s3contents#readme"
-Issues = "https://github.com/danielfrg/s3contents/issues"
-Source = "https://github.com/danielfrg/s3contents"
+Documentation = "https://github.com/imfing/jupyter-s3contents#readme"
+Issues = "https://github.com/imfing/jupyter-s3contents/issues"
+Source = "https://github.com/imfing/jupyter-s3contents"
 
 [project.optional-dependencies]
 gcs = ["gcsfs>=2021.11.0"]
