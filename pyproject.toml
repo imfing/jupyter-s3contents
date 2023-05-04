@@ -15,7 +15,6 @@ keywords = [
   "minio",
 ]
 authors = [
-  { name = "Daniel Rodriguez", email = "daniel@danielfrg.com" },
   { name = "Xin Fu", email = "xin@imfing.com" }
 ]
 classifiers = [
