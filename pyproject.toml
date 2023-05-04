@@ -14,7 +14,10 @@ keywords = [
   "google cloud storage",
   "minio",
 ]
-authors = [{ name = "Daniel Rodriguez", email = "daniel@danielfrg.com" }]
+authors = [
+  { name = "Daniel Rodriguez", email = "daniel@danielfrg.com" },
+  { name = "Xin Fu", email = "xin@imfing.com" }
+]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Programming Language :: Python",
