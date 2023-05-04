@@ -3,9 +3,6 @@ name: test
 on:
   pull_request:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
 
 concurrency:
   group: test-${{ github.head_ref }}

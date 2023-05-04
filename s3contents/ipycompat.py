@@ -4,7 +4,6 @@ Utilities for managing compat between notebook versions.
 Taken from: https://github.com/quantopian/pgcontents/blob/master/pgcontents/utils/ipycompat.py
 """
 
-import notebook
 from ipython_genutils.importstring import import_item
 from ipython_genutils.py3compat import string_types
 from nbformat import from_dict, reads, writes
@@ -15,14 +14,14 @@ from nbformat.v4.nbbase import (
     new_raw_cell,
 )
 from nbformat.v4.rwbase import strip_transient
-from notebook.services.contents.checkpoints import (
+from jupyter_server.services.contents.checkpoints import (
     Checkpoints,
     GenericCheckpointsMixin,
 )
-from notebook.services.contents.filecheckpoints import GenericFileCheckpoints
-from notebook.services.contents.filemanager import FileContentsManager
-from notebook.services.contents.manager import ContentsManager
-from notebook.utils import to_os_path
+from jupyter_server.services.contents.filecheckpoints import GenericFileCheckpoints
+from jupyter_server.services.contents.filemanager import FileContentsManager
+from jupyter_server.services.contents.manager import ContentsManager
+from jupyter_server.utils import to_os_path
 from traitlets import (
     Any,
     Bool,
@@ -35,9 +34,6 @@ from traitlets import (
     validate,
 )
 from traitlets.config import Config
-
-if notebook.version_info[0] >= 7:  # noqa
-    raise ImportError("Jupyter Notebook versions 6 and up are not supported.")
 
 
 __all__ = [
